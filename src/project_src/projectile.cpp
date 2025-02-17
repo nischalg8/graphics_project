@@ -4,134 +4,188 @@ projectile::projectile() : x(0), y(0), vx(0), vy(0) {}
 
 projectile::~projectile() {}
 
-void projectile::simulateProjectile(float initialv, float angle, int maxx, int maxy, bool withDrag) {
+void projectile::simulateProjectile(float initialv, float angle, int maxx, int maxy, bool withDrag)
+{
 
     cleardevice();
     double physicalRadius = 0.1;
     double radianAngle = angle * M_PI / 180.0;
-    double TIME_STEP = withDrag ? 0.01 : 0.05;
+    double timeStep = withDrag ? 0.01 : 0.05;
     double maxHeight = (initialv * initialv * sin(radianAngle) * sin(radianAngle)) / (2 * G);
     double range = (initialv * initialv * sin(2 * radianAngle)) / G;
     double totalTime = (2 * initialv * sin(radianAngle)) / G;
 
-    double xScale = calculateScale(range, maxx);
-    double yScale = calculateScale(maxHeight, maxy);
+    int bounceCount = 0;
+    double axisX1 = 50, axisX2 = maxx - 50, axisY1 = maxy - 50, axisY2 = 50;
+
+    double xScale = this->calculateScale(range, axisX1, axisX2, axisY1, axisY2, false);
+    double yScale = this->calculateScale(maxHeight, axisX1, axisX2, axisY1, axisY2, false);
 
     std::cout << "Max Height (no drag): " << maxHeight << " m" << std::endl;
     std::cout << "Range (no drag): " << range << " m" << std::endl;
-    
+
     x = 90;
-    y = maxy - 51 - PROJECTILE_RADIUS;
+    y = axisY1 - PROJECTILE_RADIUS;
     vx = initialv * cos(radianAngle);
     vy = initialv * sin(radianAngle);
 
-    drawScene(maxx, maxy, maxHeight, range, xScale, yScale);
+    this->drawScene(maxx, maxy, maxHeight, range, xScale, yScale, axisX1, axisX2, axisY1, axisY2);
 
     double t = 0, actualMaxHeight = y, actualRange = 0;
     fillellipse(x, y, PROJECTILE_RADIUS, PROJECTILE_RADIUS);
 
-    while (y < (maxy - 50 - PROJECTILE_RADIUS)) {
+    while ((y < (axisY1 - PROJECTILE_RADIUS) || abs(vy) > THRESHOLD_VELOCITY) && (bounceCount < MAX_BOUNCES))
+    {
 
-        x += vx * TIME_STEP * xScale;
-        y -= vy * TIME_STEP * yScale;
+        x += vx * timeStep * xScale;
+        y -= vy * timeStep * yScale;
 
-        if (withDrag) {
-            applyDragForce(physicalRadius);
-        } else {
-            vy -= G * TIME_STEP;
+        if (withDrag)
+        {
+            this->applyDragForce(physicalRadius, timeStep);
+        }
+        else
+        {
+            vy -= G * timeStep;
         }
 
-        if (y < actualMaxHeight) actualMaxHeight = y;
-        if (y >= (maxy - 50 - PROJECTILE_RADIUS)) actualRange = (x - 90) / xScale;
+        if (y >= (axisY1 - PROJECTILE_RADIUS))
+        {
+            y = axisY1 - PROJECTILE_RADIUS;
+            vy = -vy * COEFFICEINT_OF_RESTITUTION;
+            vx = vx * COEFFICEINT_OF_FRICTION;
+            bounceCount++;
+        }
 
-        drawProjectile();
-        delay((totalTime / (range / (vx * TIME_STEP))) * 1000);
+        if (y <= actualMaxHeight)
+        {
+            actualMaxHeight = y;
+        }
 
-        t += TIME_STEP;
+        actualRange = (x - 90) / xScale;
+
+        this->drawProjectile();
+        delay((totalTime / (range / (vx * timeStep))) * 1000);
+
+        t += timeStep;
     }
 
-    displayResults(t, withDrag, actualRange, actualMaxHeight, maxHeight, range, maxy, yScale);
-
+    this->displayResults(t, withDrag, actualRange, actualMaxHeight, maxHeight, axisY1, yScale);
 }
 
-double projectile::calculateScale(double value, int maxValue) {
+double projectile::calculateScale(double value, int axisX1, int axisX2, int axisY1, int axisY2, bool isHeight)
+{
 
-    if (value < 150) return (maxValue - 150) / 150;
-    if (value > maxValue - 150) return (maxValue - 150) / (value + 150);
-    return 1.0;
+    if (isHeight)
+    {
+        if (value < 50)
+        {
+            return (axisY1 - axisY2) / 80;
+        }
+        else if (value > 50 && value < 200)
+        {
+            return (axisY1 - axisY2) / 300;
+        }
+        else if (value > 200 && value < 400)
+        {
+            return (axisY1 - axisY2) / 600;
+        }
+        else
+        {
+            return (axisY1 - axisY2) / value;
+        }
+    }
+    else
+    {
+        if (value < 50)
+        {
+            return (axisX2 - axisX1) / 100;
+        }
+        else if (value > 50 && value < 200)
+        {
+            return (axisX2 - axisX1) / 400;
+        }
+        else if (value > 200 && value < 400)
+        {
+            return (axisX2 - axisX1) / 800;
+        }
+        else
+        {
+            return (axisX2 - axisX1) / value;
+        }
+    }
 }
 
-void projectile::applyDragForce(double physicalRadius) {
+void projectile::applyDragForce(double physicalRadius, double timeStep)
+{
 
     double v = sqrt(vx * vx + vy * vy);
-    double dragForce = 0.5 * DRAG_COEFFICIENT * RHO * M_PI * pow(physicalRadius,2) * v * v;
+    double dragForce = 0.5 * DRAG_COEFFICIENT * RHO * M_PI * pow(physicalRadius, 2) * v * v;
     double ax = -dragForce * (vx / v);
     double ay = -G - dragForce * (vy / v);
 
-    vx += ax * 0.005;   
-    vy += ay * 0.005;
-
+    vx += ax * timeStep;
+    vy += ay * timeStep;
 }
 
-void projectile::drawProjectile() {
+void projectile::drawProjectile()
+{
 
     setfillstyle(SOLID_FILL, RED);
     fillellipse(x, y, PROJECTILE_RADIUS, PROJECTILE_RADIUS);
-
 }
 
-void projectile::displayResults(double t, bool withDrag, double actualRange, double actualMaxHeight, double maxHeight, double range, int maxy, double yScale) {
+void projectile::displayResults(double t, bool withDrag, double actualRange, double actualMaxHeight, double maxHeight, int axisY1, double yScale)
+{
 
     char result[100];
     sprintf(result, "Time: %.2f s  Range: %.2f m  Max Height: %.2f m (with Drag: %s)",
-            t, withDrag ? actualRange : range,
-            withDrag ? (maxy - 50 - actualMaxHeight) / yScale : maxHeight,
+            t, actualRange,
+            withDrag ? (axisY1 - actualMaxHeight) / yScale : maxHeight,
             withDrag ? "Yes" : "No");
 
     outtextxy(100, 50, result);
-
 }
 
-void projectile::drawScene(int maxx, int maxy, float maxHeight, float range, float xScale, float yScale) {
+void projectile::drawScene(int maxx, int maxy, float maxHeight, float range, float xScale, float yScale, int axisX1, int axisX2, int axisY1, int axisY2)
+{
 
-    int groundY = maxy - 50;
-    
     // Draw ground and launcher stand
 
-    line(50, 20, 50, groundY); 
-    line(50, groundY, maxx - 10, groundY);
-    rectangle(60, groundY - 10, 83, groundY);
-    rectangle(97, groundY - 10, 120, groundY);
+    line(axisX1, axisY1, axisX2, axisY1);
+    line(axisX1, axisY1, axisX1, axisY2);
+    rectangle(60, axisY1 - 10, 78, axisY1);
+    rectangle(103, axisY1 - 10, 120, axisY1);
     // Draw X and Y axis ticks
-    drawTicks(maxx, groundY, xScale, yScale);
-
+    this->drawTicks(maxx, xScale, yScale, axisX1, axisX2, axisY1, axisY2);
 }
 
-void projectile::drawTicks(int maxx, int groundY, float xScale, float yScale) {
+void projectile::drawTicks(int maxx, float xScale, float yScale, int axisX1, int axisX2, int axisY1, int axisY2)
+{
     // X-axis ticks
 
     int numXTicks = 8;
-    int tickIntervalX = (maxx - 110) / numXTicks;
-    for (int i = 0; i <= numXTicks; i++) {
+    int tickIntervalX = (axisX2 - 90) / numXTicks;
+    for (int i = 0; i <= numXTicks; i++)
+    {
         int tickX = 90 + i * tickIntervalX;
-        line(tickX, groundY, tickX, groundY - 10);
+        line(tickX, axisY1, tickX, axisY1 - 10);
 
         char label[10];
         sprintf(label, "%.2f ", (i * static_cast<float>(tickIntervalX) / xScale));
-        outtextxy(tickX - 10, groundY + 5, label);
-
+        outtextxy(tickX - 10, axisY1 + 5, label);
     }
 
     // Y-axis ticks
     int numYTicks = 6;
-    int tickIntervalY = (groundY - 20) / numYTicks;
-    for (int i = 1; i <= numYTicks; i++) {
-        int tickY = groundY - i * tickIntervalY;
+    int tickIntervalY = (axisY1 - axisY2) / numYTicks;
+    for (int i = 1; i <= numYTicks; i++)
+    {
+        int tickY = axisY1 - i * tickIntervalY;
         line(47, tickY, 52, tickY);
 
         char label[10];
         sprintf(label, "%.2f ", (i * static_cast<float>(tickIntervalY) / yScale));
         outtextxy(0, tickY - 5, label);
-
     }
 }

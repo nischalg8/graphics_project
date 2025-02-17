@@ -11,15 +11,13 @@ int main() {
     int screenwidth = GetSystemMetrics(SM_CXSCREEN);
     int screenheight = GetSystemMetrics(SM_CYSCREEN);
 
-    initwindow(screenwidth, screenheight, "this is window");
-
+    initwindow(screenwidth, screenheight, "This is window");
+        
    // initgraph(&gd, &gm, NULL);
     mainMenu menu;
     
     menu.displayMenu();
-
-    
-     closegraph();
+    closegraph();
     return 0;
     
 }

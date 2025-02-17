@@ -12,7 +12,10 @@
 #define G 9.8  // Gravitational acceleration
 #define RHO 1.225  // Air density at sea level (kg/m^3)
 #define DRAG_COEFFICIENT 0.47  // Drag coefficient for a sphere
-
+#define COEFFICEINT_OF_FRICTION 0.45  // Coefficient of friction
+#define COEFFICEINT_OF_RESTITUTION 0.35
+#define MAX_BOUNCES 8
+#define THRESHOLD_VELOCITY 0.001  // Coefficient of restitution
 class projectile {
 public:
     projectile();
@@ -25,22 +28,22 @@ private:
     double x, y, vx, vy;  // postion and velocity
 
     // calculateScale function to calculate the scale factor for the simulation
-    double calculateScale(double value, int maxValue);
+    double calculateScale(double, int, int , int, int , bool);
 
     //applies drag force if user selects with drag
-    void applyDragForce(double);
+    void applyDragForce(double, double);
 
     // draws projectile on the screen (x,y )
     void drawProjectile();
 
     // display resulst in screen
-    void displayResults(double t, bool withDrag, double actualRange, double actualMaxHeight, double maxHeight, double range, int maxy, double yScale);
+    void displayResults(double , bool , double , double , double,int, double);
 
     // draw scene with axes 
-    void drawScene(int maxx, int maxy, float maxHeight, float range, float xScale, float yScale);
+    void drawScene(int , int , float , float , float , float , int , int , int , int);
 
     // ticks on axes 
-    void drawTicks(int maxx, int groundY, float xScale, float yScale);
+    void drawTicks(int ,  float , float , int , int , int , int);
 };
 
 #endif // PROJECTILE_H

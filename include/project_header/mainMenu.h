@@ -19,11 +19,9 @@ int maxy;
     void displayMenu();
     
 
-protected:
 
-    void startSimulation();
-    void showHelp();
-    void exitProgram();
+
+   
 };
 
 #endif // MAINMENU_H
