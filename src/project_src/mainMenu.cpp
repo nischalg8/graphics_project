@@ -44,17 +44,17 @@ void mainMenu::displayMenu()
         getmouseclick(WM_LBUTTONDOWN, x, y);
 
         bool withDrag= false;
-        if (userin.checkButtonClick(x, y, maxx / 2 - 100, 220, maxx / 2 + 100, 270)) {
+        if (userin.checkButtonClick(x, y,this->maxx / 2 - 100, 220, this->maxx / 2 + 100, 270)) {
             withDrag= false;
-        } else if (userin.checkButtonClick(x, y, maxx / 2 - 100, 300, maxx / 2 + 100, 350)) {
+        } else if (userin.checkButtonClick(x, y, this->maxx / 2 - 100, 300, this->maxx / 2 + 100, 350)) {
             withDrag=true;
         }
         else{
             continue;
         }
-        userin.getUserInput();
+        userin.getUserInput(withDrag, maxx, maxy);
         
-        p.simulateProjectile(userin.speed,userin.angle, maxx, maxy, withDrag);
+        
         outtextxy(100, 80, const_cast<char*>("Press any key to return to menu..."));
         getch();
     }

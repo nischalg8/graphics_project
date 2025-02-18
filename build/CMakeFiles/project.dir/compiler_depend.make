@@ -1111,6 +1111,7 @@ CMakeFiles/project.dir/src/project_src/userInput.cpp.obj: D:/CPP_Projects/Projec
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cctype \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/clocale \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cmath \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdint \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdio \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdlib \
@@ -1248,6 +1249,7 @@ CMakeFiles/project.dir/src/project_src/userInput.cpp.obj: D:/CPP_Projects/Projec
   C:/mingw64/x86_64-w64-mingw32/include/locale.h \
   C:/mingw64/x86_64-w64-mingw32/include/lzexpand.h \
   C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/math.h \
   C:/mingw64/x86_64-w64-mingw32/include/mcx.h \
   C:/mingw64/x86_64-w64-mingw32/include/memoryapi.h \
   C:/mingw64/x86_64-w64-mingw32/include/minwinbase.h \
@@ -1370,6 +1372,7 @@ CMakeFiles/project.dir/src/project_src/userInput.cpp.obj: D:/CPP_Projects/Projec
   C:/mingw64/x86_64-w64-mingw32/include/wtypes.h \
   C:/mingw64/x86_64-w64-mingw32/include/wtypesbase.h \
   D:/CPP_Projects/ProjectileSimulator/include/libbgi_header/graphics.h \
+  D:/CPP_Projects/ProjectileSimulator/include/project_header/projectile.h \
   D:/CPP_Projects/ProjectileSimulator/include/project_header/userInput.h
 
 

@@ -13,8 +13,8 @@
 #define RHO 1.225  // Air density at sea level (kg/m^3)
 #define DRAG_COEFFICIENT 0.47  // Drag coefficient for a sphere
 #define COEFFICEINT_OF_FRICTION 0.45  // Coefficient of friction
-#define COEFFICEINT_OF_RESTITUTION 0.35
-#define MAX_BOUNCES 8
+#define COEFFICEINT_OF_RESTITUTION 0.6
+#define MAX_BOUNCES 10
 #define THRESHOLD_VELOCITY 0.001  // Coefficient of restitution
 class projectile {
 public:
@@ -22,7 +22,7 @@ public:
     ~projectile();
 
     // actual simulation function
-    void simulateProjectile(float initialv, float angle, int maxx, int maxy, bool withDrag);
+    void simulateProjectile(float initialv, float angle, int maxx, int maxy, bool withDrag, bool);
 
 private:
     double x, y, vx, vy;  // postion and velocity
@@ -30,6 +30,7 @@ private:
     // calculateScale function to calculate the scale factor for the simulation
     double calculateScale(double, int, int , int, int , bool);
 
+    double calculateCommonScale(double, int, int, int, int);
     //applies drag force if user selects with drag
     void applyDragForce(double, double);
 

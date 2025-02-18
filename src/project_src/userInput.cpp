@@ -42,17 +42,44 @@ double userInput::getValue(char *str)
     return value;
 
 }
-void userInput::getUserInput()
+void userInput::getUserInput(bool withDrag,int maxx, int maxy)
 {
     cleardevice();
     
     int x, y;
-   
-    
+    projectile p;
     // Input for Speed
     this->speed= this->getValue(const_cast<char*>("Enter Initial Speed (m/s):"));
     this->angle= this->getValue(const_cast<char*>("Enter the Launch Angle:"));
-    
+
+    setcolor(BLACK);
+    rectangle(300, 400, 450, 450);
+    outtextxy(310, 410, const_cast<char *>("Common Scale"));
+        
+    rectangle(600, 400, 820, 450);
+    outtextxy(610, 410, const_cast<char *>("Adjust Scale(X and Y)"));
+
+    while (!ismouseclick(WM_LBUTTONDOWN))
+        {
+            delay(100);
+        
+         getmouseclick(WM_LBUTTONDOWN, x, y);
+         outtextxy(250, 470, const_cast<char*>("Adjust Scale(X and Y) adjusts the projectile path to screen size but may distort the launch angle"));
+        bool commonScale= false;
+        if (this->checkButtonClick(x, y, 300, 400, 500, 450)) {
+           commonScale= true;
+           p.simulateProjectile(this->speed,this->angle, maxx, maxy, withDrag, commonScale);
+           return;
+        } else if (this->checkButtonClick(x, y, 600, 400, 800, 450)) {
+           commonScale= false;
+           p.simulateProjectile(this->speed,this->angle, maxx, maxy, withDrag, commonScale);
+           return;
+        }
+        else{
+            continue;
+        }
+    }
+
     
 }
 

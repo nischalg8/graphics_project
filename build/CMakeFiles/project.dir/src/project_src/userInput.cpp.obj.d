@@ -341,4 +341,8 @@ CMakeFiles/project.dir/src/project_src/userInput.cpp.obj: \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/sstream \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/sstream.tcc \
  C:/mingw64/x86_64-w64-mingw32/include/conio.h \
- C:/mingw64/x86_64-w64-mingw32/include/sec_api/conio_s.h
+ C:/mingw64/x86_64-w64-mingw32/include/sec_api/conio_s.h \
+ D:/CPP_Projects/ProjectileSimulator/include/project_header/projectile.h \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cmath \
+ C:/mingw64/x86_64-w64-mingw32/include/math.h \
+ D:/CPP_Projects/ProjectileSimulator/include/project_header/userInput.h

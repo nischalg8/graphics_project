@@ -4,6 +4,8 @@
 #include <graphics.h>
 #include <conio.h>
 #include <cstdlib>
+#include "projectile.h"
+
 class userInput{
     
    
@@ -14,7 +16,7 @@ class userInput{
     float angle;
     float speed;
     
-    void getUserInput();
+    void getUserInput(bool, int, int);
     
    
     double getValue(char *);

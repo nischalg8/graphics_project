@@ -17,11 +17,7 @@ int maxy;
     ~mainMenu();
 
     void displayMenu();
-    
 
-
-
-   
 };
 
 #endif // MAINMENU_H
