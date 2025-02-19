@@ -8,24 +8,25 @@ void projectile::simulateProjectile(float initialv, float angle, int maxx, int m
 {
 
     cleardevice();
-    double physicalRadius = 0.1; 
+    double physicalRadius = 0.1;
     double radianAngle = angle * M_PI / 180.0;
-    double timeStep = withDrag ? 0.01 : 0.05;
+    double timeStep;
     double maxHeight = (initialv * initialv * sin(radianAngle) * sin(radianAngle)) / (2 * G);
     double range = (initialv * initialv * sin(2 * radianAngle)) / G;
     double totalTime = (2 * initialv * sin(radianAngle)) / G;
-   
+
     int bounceCount = 0;
     double axisX1 = 50, axisX2 = maxx - 50, axisY1 = maxy - 50, axisY2 = 50;
     double xScale, yScale;
-    if(commonScale)
+    if (commonScale)
     {
-        xScale = this->calculateCommonScale(range* 2, axisX1, axisX2, axisY1, axisY2);
+        xScale = this->calculateCommonScale(range * 2, axisX1, axisX2, axisY1, axisY2);
         yScale = xScale;
     }
-    else{
-     xScale = this->calculateScale(range , axisX1, axisX2, axisY1, axisY2, false);
-     yScale = this->calculateScale(maxHeight, axisX1, axisX2, axisY1, axisY2, true);
+    else
+    {
+        xScale = this->calculateScale(range / (1 - COEFFICEINT_OF_RESTITUTION), axisX1, axisX2, axisY1, axisY2, false);
+        yScale = this->calculateScale(maxHeight, axisX1, axisX2, axisY1, axisY2, true);
     }
 
     std::cout << "Max Height (no drag): " << maxHeight << " m" << std::endl;
@@ -43,15 +44,17 @@ void projectile::simulateProjectile(float initialv, float angle, int maxx, int m
 
     bool shouldContinue = true;
 
+    //  while ((y < (axisY1 - PROJECTILE_RADIUS) || abs(vy) > THRESHOLD_VELOCITY) && (bounceCount < MAX_BOUNCES))
 
-  //  while ((y < (axisY1 - PROJECTILE_RADIUS) || abs(vy) > THRESHOLD_VELOCITY) && (bounceCount < MAX_BOUNCES))
-    
-  while(shouldContinue)
-  {
+    while (shouldContinue)
+    {
+        // auto currentTime = std::chrono::steady_clock::now();
 
-       // x += vx * timeStep * xScale;
-      //  y -= vy * timeStep * yScale;
+        timeStep = 0.005;
 
+        std::cout << vx << std::endl;
+        std::cout << vy << std::endl;
+        std::cout << std::endl;
         if (withDrag)
         {
             this->applyDragForce(physicalRadius, timeStep);
@@ -67,12 +70,13 @@ void projectile::simulateProjectile(float initialv, float angle, int maxx, int m
         {
             y = axisY1 - PROJECTILE_RADIUS;
             vy = -vy * COEFFICEINT_OF_RESTITUTION;
-          // vx = vx * COEFFICEINT_OF_FRICTION;
+
             bounceCount++;
 
-            if (abs(vy) < THRESHOLD_VELOCITY)
+            if (fabs(vy) <= THRESHOLD_VELOCITY_Y)
             {
                 vy = 0;
+                shouldContinue = false;
             }
         }
 
@@ -84,13 +88,12 @@ void projectile::simulateProjectile(float initialv, float angle, int maxx, int m
         actualRange = (x - 90) / xScale;
 
         this->drawProjectile();
-        delay((totalTime / (range / (vx * timeStep))) * 1000);
+        delay(timeStep * 1000);
         t += timeStep;
-        if(bounceCount >= MAX_BOUNCES)
-        {
-            shouldContinue = false;
-        }
-        
+        // if (bounceCount >= MAX_BOUNCES)
+        // {
+        //     shouldContinue = false;
+        //  }
     }
 
     this->displayResults(t, withDrag, actualRange, actualMaxHeight, maxHeight, axisY1, yScale);
@@ -99,59 +102,38 @@ void projectile::simulateProjectile(float initialv, float angle, int maxx, int m
 double projectile::calculateScale(double value, int axisX1, int axisX2, int axisY1, int axisY2, bool isHeight)
 {
 
-   
     if (isHeight)
     {
-        if (value < 50)
-        {
-            return (axisY1 - axisY2) / 60;
-        }
+        if (value < 15)
+            return (axisY1 - axisY2) / 25;
+        else if (value < 50)
+            return (axisY1 - axisY2) / 50;
         else if (value > 50 && value < 300)
-        {
             return (axisY1 - axisY2) / (value * 1.2);
-        }
-       
         else
-        {
-            return (axisY1 - axisY2) / (value* 1.2);
-        }
+            return (axisY1 - axisY2) / (value * 1.2);
     }
     else
     {
         if (value < 50)
-        {
             return (axisX2 - axisX1) / 100;
-        }
         else if (value > 50 && value < 300)
-        {
             return (axisX2 - axisX1) / (value * 2);
-        }
-       
         else
-        {
             return (axisX2 - axisX1) / (value * 1.5);
-        }
     }
 }
 
- double projectile::calculateCommonScale(double value, int axisX1, int axisX2, int axisY1, int axisY2)
+double projectile::calculateCommonScale(double value, int axisX1, int axisX2, int axisY1, int axisY2)
 {
-    
-    if (value < 50)
-    {
-        return (axisX2 - axisX1) / 100;
-    }
-    else if (value > 50 && value < 300)
-    {
-        return (axisX2 - axisX1) / (value * 2);
-    }
-   
-    else
-    {
-        return (axisX2 - axisX1) / (value * 1.5);
-    }
-}
 
+    if (value < 50)
+        return (axisX2 - axisX1) / 100;
+    else if (value > 50 && value < 300)
+        return (axisX2 - axisX1) / (value * 2);
+    else
+        return (axisX2 - axisX1) / (value * 1.5);
+}
 
 void projectile::applyDragForce(double physicalRadius, double timeStep)
 {

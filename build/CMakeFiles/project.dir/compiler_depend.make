@@ -62,6 +62,7 @@ CMakeFiles/project.dir/src/project_src/main.cpp.obj: D:/CPP_Projects/ProjectileS
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/nested_exception.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream.tcc \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream_insert.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/postypes.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/predefined_ops.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ptr_traits.h \
@@ -79,11 +80,13 @@ CMakeFiles/project.dir/src/project_src/main.cpp.obj: D:/CPP_Projects/ProjectileS
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cctype \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/chrono \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/clocale \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cmath \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdint \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdio \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdlib \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwchar \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwctype \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/assertions.h \
@@ -100,8 +103,10 @@ CMakeFiles/project.dir/src/project_src/main.cpp.obj: D:/CPP_Projects/ProjectileS
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iosfwd \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/limits \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ratio \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/sstream \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdexcept \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdlib.h \
@@ -259,6 +264,7 @@ CMakeFiles/project.dir/src/project_src/main.cpp.obj: D:/CPP_Projects/ProjectileS
   C:/mingw64/x86_64-w64-mingw32/include/pthread.h \
   C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
   C:/mingw64/x86_64-w64-mingw32/include/pthread_signal.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
   C:/mingw64/x86_64-w64-mingw32/include/realtimeapiset.h \
   C:/mingw64/x86_64-w64-mingw32/include/reason.h \
@@ -304,6 +310,7 @@ CMakeFiles/project.dir/src/project_src/main.cpp.obj: D:/CPP_Projects/ProjectileS
   C:/mingw64/x86_64-w64-mingw32/include/systemtopologyapi.h \
   C:/mingw64/x86_64-w64-mingw32/include/threadpoolapiset.h \
   C:/mingw64/x86_64-w64-mingw32/include/threadpoollegacyapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/time.h \
   C:/mingw64/x86_64-w64-mingw32/include/timezoneapi.h \
   C:/mingw64/x86_64-w64-mingw32/include/tvout.h \
   C:/mingw64/x86_64-w64-mingw32/include/unknwn.h \
@@ -406,6 +413,7 @@ CMakeFiles/project.dir/src/project_src/mainMenu.cpp.obj: D:/CPP_Projects/Project
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/nested_exception.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream.tcc \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream_insert.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/postypes.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/predefined_ops.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ptr_traits.h \
@@ -423,11 +431,13 @@ CMakeFiles/project.dir/src/project_src/mainMenu.cpp.obj: D:/CPP_Projects/Project
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cctype \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/chrono \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/clocale \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cmath \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdint \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdio \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdlib \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwchar \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwctype \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/assertions.h \
@@ -444,8 +454,10 @@ CMakeFiles/project.dir/src/project_src/mainMenu.cpp.obj: D:/CPP_Projects/Project
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iosfwd \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/limits \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ratio \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/sstream \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdexcept \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdlib.h \
@@ -603,6 +615,7 @@ CMakeFiles/project.dir/src/project_src/mainMenu.cpp.obj: D:/CPP_Projects/Project
   C:/mingw64/x86_64-w64-mingw32/include/pthread.h \
   C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
   C:/mingw64/x86_64-w64-mingw32/include/pthread_signal.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
   C:/mingw64/x86_64-w64-mingw32/include/realtimeapiset.h \
   C:/mingw64/x86_64-w64-mingw32/include/reason.h \
@@ -648,6 +661,7 @@ CMakeFiles/project.dir/src/project_src/mainMenu.cpp.obj: D:/CPP_Projects/Project
   C:/mingw64/x86_64-w64-mingw32/include/systemtopologyapi.h \
   C:/mingw64/x86_64-w64-mingw32/include/threadpoolapiset.h \
   C:/mingw64/x86_64-w64-mingw32/include/threadpoollegacyapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/time.h \
   C:/mingw64/x86_64-w64-mingw32/include/timezoneapi.h \
   C:/mingw64/x86_64-w64-mingw32/include/tvout.h \
   C:/mingw64/x86_64-w64-mingw32/include/unknwn.h \
@@ -750,6 +764,7 @@ CMakeFiles/project.dir/src/project_src/projectile.cpp.obj: D:/CPP_Projects/Proje
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/nested_exception.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream.tcc \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream_insert.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/postypes.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/predefined_ops.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ptr_traits.h \
@@ -767,11 +782,13 @@ CMakeFiles/project.dir/src/project_src/projectile.cpp.obj: D:/CPP_Projects/Proje
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cctype \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/chrono \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/clocale \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cmath \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdint \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdio \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdlib \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwchar \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwctype \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/assertions.h \
@@ -788,8 +805,10 @@ CMakeFiles/project.dir/src/project_src/projectile.cpp.obj: D:/CPP_Projects/Proje
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iosfwd \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/limits \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ratio \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/sstream \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdexcept \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdlib.h \
@@ -947,6 +966,7 @@ CMakeFiles/project.dir/src/project_src/projectile.cpp.obj: D:/CPP_Projects/Proje
   C:/mingw64/x86_64-w64-mingw32/include/pthread.h \
   C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
   C:/mingw64/x86_64-w64-mingw32/include/pthread_signal.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
   C:/mingw64/x86_64-w64-mingw32/include/realtimeapiset.h \
   C:/mingw64/x86_64-w64-mingw32/include/reason.h \
@@ -992,6 +1012,7 @@ CMakeFiles/project.dir/src/project_src/projectile.cpp.obj: D:/CPP_Projects/Proje
   C:/mingw64/x86_64-w64-mingw32/include/systemtopologyapi.h \
   C:/mingw64/x86_64-w64-mingw32/include/threadpoolapiset.h \
   C:/mingw64/x86_64-w64-mingw32/include/threadpoollegacyapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/time.h \
   C:/mingw64/x86_64-w64-mingw32/include/timezoneapi.h \
   C:/mingw64/x86_64-w64-mingw32/include/tvout.h \
   C:/mingw64/x86_64-w64-mingw32/include/unknwn.h \
@@ -1093,6 +1114,7 @@ CMakeFiles/project.dir/src/project_src/userInput.cpp.obj: D:/CPP_Projects/Projec
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/nested_exception.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream.tcc \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream_insert.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/postypes.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/predefined_ops.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ptr_traits.h \
@@ -1110,11 +1132,13 @@ CMakeFiles/project.dir/src/project_src/userInput.cpp.obj: D:/CPP_Projects/Projec
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cctype \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/chrono \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/clocale \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cmath \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdint \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdio \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdlib \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwchar \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwctype \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/assertions.h \
@@ -1131,8 +1155,10 @@ CMakeFiles/project.dir/src/project_src/userInput.cpp.obj: D:/CPP_Projects/Projec
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iosfwd \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/limits \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ratio \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/sstream \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdexcept \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdlib.h \
@@ -1290,6 +1316,7 @@ CMakeFiles/project.dir/src/project_src/userInput.cpp.obj: D:/CPP_Projects/Projec
   C:/mingw64/x86_64-w64-mingw32/include/pthread.h \
   C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
   C:/mingw64/x86_64-w64-mingw32/include/pthread_signal.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
   C:/mingw64/x86_64-w64-mingw32/include/realtimeapiset.h \
   C:/mingw64/x86_64-w64-mingw32/include/reason.h \
@@ -1335,6 +1362,7 @@ CMakeFiles/project.dir/src/project_src/userInput.cpp.obj: D:/CPP_Projects/Projec
   C:/mingw64/x86_64-w64-mingw32/include/systemtopologyapi.h \
   C:/mingw64/x86_64-w64-mingw32/include/threadpoolapiset.h \
   C:/mingw64/x86_64-w64-mingw32/include/threadpoollegacyapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/time.h \
   C:/mingw64/x86_64-w64-mingw32/include/timezoneapi.h \
   C:/mingw64/x86_64-w64-mingw32/include/tvout.h \
   C:/mingw64/x86_64-w64-mingw32/include/unknwn.h \
@@ -1414,6 +1442,10 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmi2vlintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/adxintrin.h:
 
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsaveintrin.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h:
+
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/sstream:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:
@@ -1464,9 +1496,9 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmiintrin.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/sys/types.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmivlintrin.h:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ptr_traits.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmivlintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vlbwintrin.h:
 
@@ -1604,6 +1636,12 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mm_malloc.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno:
 
+C:/mingw64/x86_64-w64-mingw32/include/jobapi.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/assertions.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/chrono:
+
 C:/mingw64/x86_64-w64-mingw32/include/sysinfoapi.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwctype:
@@ -1616,11 +1654,11 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdio:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdlib:
 
+C:/mingw64/x86_64-w64-mingw32/include/ole2.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime:
+
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwchar:
-
-C:/mingw64/x86_64-w64-mingw32/include/jobapi.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/assertions.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/debug.h:
 
@@ -1652,11 +1690,15 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream:
 
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/limits:
+
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new:
 
 C:/mingw64/x86_64-w64-mingw32/include/crtdefs.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ratio:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdexcept:
 
@@ -1794,8 +1836,6 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xmmintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsavecintrin.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsaveintrin.h:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsaveoptintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsavesintrin.h:
@@ -1916,8 +1956,6 @@ C:/mingw64/x86_64-w64-mingw32/include/objidl.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/objidlbase.h:
 
-C:/mingw64/x86_64-w64-mingw32/include/ole2.h:
-
 C:/mingw64/x86_64-w64-mingw32/include/oleidl.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/process.h:
@@ -1963,6 +2001,8 @@ C:/mingw64/x86_64-w64-mingw32/include/pthread.h:
 C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/pthread_signal.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/winspool.h:
 
@@ -2029,6 +2069,8 @@ C:/mingw64/x86_64-w64-mingw32/include/wincrypt.h:
 C:/mingw64/x86_64-w64-mingw32/include/threadpoolapiset.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/threadpoollegacyapiset.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/time.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/timezoneapi.h:
 

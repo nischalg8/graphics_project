@@ -6,16 +6,17 @@
 #include <cmath>
 #include <cstdio>
 #include "userInput.h"
-
+#include <chrono>
 
 #define PROJECTILE_RADIUS 5  // Define radius of the projectile
 #define G 9.8  // Gravitational acceleration
 #define RHO 1.225  // Air density at sea level (kg/m^3)
 #define DRAG_COEFFICIENT 0.47  // Drag coefficient for a sphere
 #define COEFFICEINT_OF_FRICTION 0.45  // Coefficient of friction
-#define COEFFICEINT_OF_RESTITUTION 0.6
+#define COEFFICEINT_OF_RESTITUTION 0.5
 #define MAX_BOUNCES 10
-#define THRESHOLD_VELOCITY 0.001  // Coefficient of restitution
+
+#define THRESHOLD_VELOCITY_Y 0.0163333  // Coefficient of restitution
 class projectile {
 public:
     projectile();
@@ -32,7 +33,7 @@ private:
 
     double calculateCommonScale(double, int, int, int, int);
     //applies drag force if user selects with drag
-    void applyDragForce(double, double);
+    void applyDragForce(double,  double);
 
     // draws projectile on the screen (x,y )
     void drawProjectile();

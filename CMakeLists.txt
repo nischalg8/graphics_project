@@ -25,7 +25,8 @@ add_library(simulator ${LIBBGI_SRC}/drawing.cxx
         ${LIBBGI_SRC}/dibutil.cxx
         ${LIBBGI_SRC}/file.cxx
         ${LIBBGI_HEADER}/winbgim.h
-        ${LIBBGI_HEADER}/winbgitypes.h)
+        ${LIBBGI_HEADER}/winbgitypes.h
+        )
 
 target_include_directories(simulator
         PUBLIC ${PROJECT_HEADER}

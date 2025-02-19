@@ -58,8 +58,6 @@ void mainMenu::displayMenu()
         outtextxy(100, 80, const_cast<char*>("Press any key to return to menu..."));
         getch();
     }
-        
-    
     
 }
 
