@@ -55,7 +55,7 @@ void mainMenu::displayMenu()
         userin.getUserInput(withDrag, maxx, maxy);
         
         
-        outtextxy(100, 80, const_cast<char*>("Press any key to return to menu..."));
+        outtextxy(850, 500, const_cast<char*>("Press any key to return to menu..."));
         getch();
     }
     

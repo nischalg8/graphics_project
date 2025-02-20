@@ -32,7 +32,9 @@ CMakeFiles/project.dir/src/project_src/main.cpp.obj: D:/CPP_Projects/ProjectileS
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avxintrin.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/bmi2intrin.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/bmiintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/algorithm \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/binders.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/algorithmfwd.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/alloc_traits.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.h \
@@ -69,15 +71,25 @@ CMakeFiles/project.dir/src/project_src/main.cpp.obj: D:/CPP_Projects/ProjectileS
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/range_access.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/sstream.tcc \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algo.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_bvector.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_construct.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_function.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_heap.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_types.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_relops.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_tempbuf.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_uninitialized.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf.tcc \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf_iterator.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uniform_int_dist.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/vector.tcc \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cctype \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/chrono \
@@ -115,6 +127,8 @@ CMakeFiles/project.dir/src/project_src/main.cpp.obj: D:/CPP_Projects/ProjectileS
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/utility \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/vector \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -383,7 +397,9 @@ CMakeFiles/project.dir/src/project_src/mainMenu.cpp.obj: D:/CPP_Projects/Project
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avxintrin.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/bmi2intrin.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/bmiintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/algorithm \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/binders.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/algorithmfwd.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/alloc_traits.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.h \
@@ -420,15 +436,25 @@ CMakeFiles/project.dir/src/project_src/mainMenu.cpp.obj: D:/CPP_Projects/Project
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/range_access.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/sstream.tcc \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algo.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_bvector.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_construct.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_function.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_heap.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_types.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_relops.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_tempbuf.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_uninitialized.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf.tcc \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf_iterator.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uniform_int_dist.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/vector.tcc \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cctype \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/chrono \
@@ -466,6 +492,8 @@ CMakeFiles/project.dir/src/project_src/mainMenu.cpp.obj: D:/CPP_Projects/Project
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/utility \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/vector \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -734,7 +762,9 @@ CMakeFiles/project.dir/src/project_src/projectile.cpp.obj: D:/CPP_Projects/Proje
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avxintrin.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/bmi2intrin.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/bmiintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/algorithm \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/binders.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/algorithmfwd.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/alloc_traits.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.h \
@@ -771,15 +801,25 @@ CMakeFiles/project.dir/src/project_src/projectile.cpp.obj: D:/CPP_Projects/Proje
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/range_access.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/sstream.tcc \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algo.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_bvector.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_construct.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_function.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_heap.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_types.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_relops.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_tempbuf.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_uninitialized.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf.tcc \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf_iterator.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uniform_int_dist.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/vector.tcc \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cctype \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/chrono \
@@ -817,6 +857,8 @@ CMakeFiles/project.dir/src/project_src/projectile.cpp.obj: D:/CPP_Projects/Proje
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/utility \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/vector \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -1084,7 +1126,9 @@ CMakeFiles/project.dir/src/project_src/userInput.cpp.obj: D:/CPP_Projects/Projec
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avxintrin.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/bmi2intrin.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/bmiintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/algorithm \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/binders.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/algorithmfwd.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/alloc_traits.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.h \
@@ -1121,15 +1165,25 @@ CMakeFiles/project.dir/src/project_src/userInput.cpp.obj: D:/CPP_Projects/Projec
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/range_access.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/sstream.tcc \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algo.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_bvector.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_construct.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_function.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_heap.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_types.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_relops.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_tempbuf.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_uninitialized.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf.tcc \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf_iterator.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uniform_int_dist.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/vector.tcc \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cctype \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/chrono \
@@ -1167,6 +1221,8 @@ CMakeFiles/project.dir/src/project_src/userInput.cpp.obj: D:/CPP_Projects/Projec
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/utility \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/vector \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -1404,13 +1460,13 @@ CMakeFiles/project.dir/src/project_src/userInput.cpp.obj: D:/CPP_Projects/Projec
   D:/CPP_Projects/ProjectileSimulator/include/project_header/userInput.h
 
 
-D:/CPP_Projects/ProjectileSimulator/src/project_src/main.cpp:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/postypes.h:
-
 C:/mingw64/x86_64-w64-mingw32/include/winerror.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/concept_check.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/postypes.h:
+
+D:/CPP_Projects/ProjectileSimulator/src/project_src/main.cpp:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_defines.h:
 
@@ -1443,6 +1499,8 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmi2vlintrin.h:
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/adxintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsaveintrin.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/algorithm:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h:
 
@@ -1506,6 +1564,8 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functexcept.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/limits.h:
 
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_relops.h:
+
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vpopcntdqvlintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vldqintrin.h:
@@ -1541,6 +1601,12 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream_insert.h:
 C:/mingw64/x86_64-w64-mingw32/include/poppack.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/bmi2intrin.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/algorithmfwd.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h:
 
@@ -1596,17 +1662,31 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/range_access.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/_bsd_types.h:
 
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/utility:
+
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/sstream.tcc:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h:
 
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algo.h:
+
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cmath:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h:
 
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_bvector.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mmintrin.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_construct.h:
+
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_function.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_heap.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/wow64apiset.h:
 
@@ -1624,6 +1704,12 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/exception:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h:
 
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_tempbuf.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_uninitialized.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:
+
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf.tcc:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf_iterator.h:
@@ -1631,6 +1717,14 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf_iterator.
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/immintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/utilapiset.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/rpcnterr.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uniform_int_dist.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/vector.tcc:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mm_malloc.h:
 
@@ -1712,6 +1806,8 @@ C:/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo:
 
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/vector:
+
 C:/mingw64/x86_64-w64-mingw32/include/winbase.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h:
@@ -1769,10 +1865,6 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/gfniintrin.h:
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/lwpintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/lzcntintrin.h:
-
-C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mmintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/movdirintrin.h:
 
@@ -2018,10 +2110,6 @@ C:/mingw64/x86_64-w64-mingw32/include/rpcnsi.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/rpcnsip.h:
 
-C:/mingw64/x86_64-w64-mingw32/include/utilapiset.h:
-
-C:/mingw64/x86_64-w64-mingw32/include/rpcnterr.h:
-
 C:/mingw64/x86_64-w64-mingw32/include/rpcsal.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/sal.h:
@@ -2031,10 +2119,6 @@ D:/CPP_Projects/ProjectileSimulator/include/libbgi_header/graphics.h:
 C:/mingw64/x86_64-w64-mingw32/include/sdkddkver.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h:
-
-C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h:
-
-C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/sec_api/conio_s.h:
 

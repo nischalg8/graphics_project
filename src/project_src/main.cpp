@@ -8,13 +8,13 @@
 
 int main() {
     int gd = DETECT, gm;
-    int screenWidth =  round(GetSystemMetrics(SM_CXSCREEN) /1.3) ;
-    int screenHeight = round(GetSystemMetrics(SM_CYSCREEN) / 1.3);
+    int screenWidth =  round(GetSystemMetrics(SM_CXSCREEN) ) ;
+    int screenHeight = round(GetSystemMetrics(SM_CYSCREEN) );
     
 
     
     initwindow(screenWidth, screenHeight, "Projectile Simulator");
-   std::cout<<(float)screenWidth<<(float)screenHeight<<std::endl;
+  //  std::cout<<(float)screenWidth<<(float)screenHeight<<std::endl;
    // initgraph(&gd, &gm, NULL);
     mainMenu menu;
     
